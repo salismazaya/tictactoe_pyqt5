@@ -1,1 +1,3 @@
-# tictactoe_pyqt5
+# requirements
+- python 3.x<br>
+- pyqt5
