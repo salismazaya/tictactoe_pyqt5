@@ -111,7 +111,7 @@ class Main(QWidget):
         winner = self.gas.who_win()
         if winner in ["Player 1", "Player 2", "Draw"]:
             self.coloumsControl(disable = True)
-            if not self.p1_first:
+            if not self.p1_first and winner != "Draw":
                 winner = "Player 2" if winner == "Player 1" else "Player 1"
             self.winner_.setText("<h3>Winner: " + winner)
             self.restart_.setEnabled(True)
